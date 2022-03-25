@@ -1,10 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import NavMenu from "./components/NavMenu";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
-const App = () => {
+export default function App() {
   return (
     <div>
-      <h1>project start</h1>
-      <h3>some text</h3>
+      <Router>
+        <NavMenu />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </Router>
     </div>
   );
-};
+}
