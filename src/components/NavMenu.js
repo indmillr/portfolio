@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -9,6 +9,7 @@ const NavMenuStyles = styled.div`
   top: 0;
   width: 100%;
   padding: 1rem 0;
+  /* ----- BG Color necessary to hide page text ----- */
   background-color: var(--dark-bg);
   ul {
     max-width: 1200px;
@@ -43,35 +44,133 @@ const NavMenuStyles = styled.div`
     cursor: pointer;
     display: none;
     outline: none;
+    /* ----- Remove Click Event from SVG ----- */
+    * {
+      pointer-events: none;
+    }
   }
-  @media any screen and (max-width: 770px){
+  .closeNavIcon {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px){
+    padding: 0;
+
+    /* ----- HIDE NAVMENU with SetState toggle ----- */
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
     .mobile-menu-icon {
-      
+      display:block;
+    }
+    .navItems {
+      --top: 1rem;
+      transition: .3s ease transform;
+      background-color: var(--deep-dark);
+      padding: 2rem;
+      width: 90%;
+      max-width: 300px;
+      border-radius: 12px;
+      position: absolute;
+      right: 1rem;
+      top: var(--top);
+      .closeNavIcon {
+        display: block;
+        width: 3rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        /* ----- Remove Click Event from SVG ----- */
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
     }
   }
 `;
 
 export default function NavMenu() {
+  const [showNav, SetShowNav] = useState(false);
+
   return (
     <NavMenuStyles>
-      <div className='mobile-menu-icon'>
+      <div
+        // Hamburger Menu toggle NavMenu
+        className='mobile-menu-icon'
+        onClick={() => SetShowNav(!showNav)}
+        role='button'
+        // ACCESSIBILITY
+        onkKeyDown={() => SetShowNav(!showNav)}
+        tabIndex={0}
+      >
         <MdMenu />
       </div>
-      <ul>
-        <div className='closeNavIcon'>
+      <ul className={!showNav ? "navItems hide-item" : "navItems"}>
+        <div
+          // Close Menu toggle NavMenu
+          className='closeNavIcon'
+          onClick={() => SetShowNav(!showNav)}
+          role='button'
+          // ACCESSIBILITY
+          onkKeyDown={() => SetShowNav(!showNav)}
+          tabIndex={0}
+        >
           <MdClose />
         </div>
         <li>
-          <NavLink to='/'>Home</NavLink>
+          <NavLink
+            to='/'
+            // Close NavMenu on Link click
+            onClick={() => SetShowNav(!showNav)}
+            role='button'
+            // ACCESSIBILITY
+            onkKeyDown={() => SetShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/about'>About</NavLink>
+          <NavLink
+            to='/about'
+            // Close NavMenu on Link click
+            onClick={() => SetShowNav(!showNav)}
+            role='button'
+            // ACCESSIBILITY
+            onkKeyDown={() => SetShowNav(!showNav)}
+            tabIndex={0}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/projects'>Projects</NavLink>
+          <NavLink
+            to='/projects'
+            // Close NavMenu on Link click
+            onClick={() => SetShowNav(!showNav)}
+            role='button'
+            // ACCESSIBILITY
+            onkKeyDown={() => SetShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Projects
+          </NavLink>
         </li>
         <li>
-          <NavLink to='/contact'>Contact</NavLink>
+          <NavLink
+            to='/contact'
+            // Close NavMenu on Link click
+            onClick={() => SetShowNav(!showNav)}
+            role='button'
+            // ACCESSIBILITY
+            onkKeyDown={() => SetShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Contact
+          </NavLink>
         </li>
       </ul>
     </NavMenuStyles>
