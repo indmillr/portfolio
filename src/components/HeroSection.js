@@ -18,7 +18,7 @@ export default function HeroSection() {
           <PText>
             I love to design and make new web experiences for people.
           </PText>
-          <Button btnLink='/projects' btnText='See my Works' outline={false} />
+          <Button btnLink='/projects' btnText='See my Works' />
         </div>
       </div>
     </div>
