@@ -19,17 +19,16 @@ const ItemStyles = styled.div`
   }
 `;
 
-export default function ServicesSectionItems() {
+export default function ServicesSectionItems({
+  icon = <MdDesktopMac />,
+  title = "Web Design",
+  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
+}) {
   return (
     <ItemStyles>
-      <div className='servicesItem__icon'>
-        <MdDesktopMac />
-        <div className='servicesItem__title'>Web Design</div>
-        <PText>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's ok
-        </PText>
-      </div>
+      <div className='servicesItem__icon'>{icon}</div>
+      <div className='servicesItem__title'>{title}</div>
+      <PText>{desc}</PText>
     </ItemStyles>
   );
 }
