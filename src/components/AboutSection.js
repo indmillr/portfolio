@@ -19,7 +19,6 @@ const AboutSectionStyle = styled.div`
   }
   .section-title {
     text-align: left;
-  }
   .para {
     margin-top: 2rem;
     margin-left: 0;
@@ -50,7 +49,7 @@ export default function AboutSection() {
           </PText>
           <div className='aboutSection__buttons'>
             <Button btnLink='/projects' btnText='Works' />
-            <Button btnLink='/about' btnText='Read More' outline />
+            <Button btnLink='/about' btnText='Read More' outline='true' />
           </div>
         </div>
         <div className='aboutSection__right'>

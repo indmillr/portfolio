@@ -25,7 +25,7 @@ export default function Button({
   // default values for Buttons
   btnLink = "test",
   btnText = "test",
-  outline = "false",
+  outline,
 }) {
   return (
     <ButtonStyle outline={outline}>
