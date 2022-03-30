@@ -57,15 +57,23 @@ const TestimonialSectionStyles = styled.div`
   }
   .fade-enter {
     opacity: 0;
+    transform: scale(0.96);
   }
   .fade-enter-active {
     opacity: 1;
+    transform: scale(1);
+    transition: 300ms ease-in;
+    transition-property: opacity, transform;
   }
   .fade-exit {
     opacity: 1;
+    transform: scale(1);
   }
   .fade-active {
     opacity: 0;
+    transform: scale(0.96);
+    transition: 300ms ease-in;
+    transition-property: opacity, transform;
   }
 `;
 
