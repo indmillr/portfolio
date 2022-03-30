@@ -80,9 +80,10 @@ export default function AboutSection() {
             heading='About Me'
           />
           <PText>
-            I am a freelance website designer and developer from Nixa, Missouri.
-            I create professional websites. I love design and alwasys try to
-            show unique views to the audience through my work.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et
+            rem voluptatibus incidunt modi provident accusamus inventore.
+            Commodi mollitia molestias fuga. Omnis exercitationem repellendus
+            dignissimos ratione quaerat ullam dolor illum dolores.
           </PText>
           <div className='aboutSection__buttons'>
             <Button btnLink='/projects' btnText='Works' />

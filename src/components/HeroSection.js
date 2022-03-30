@@ -159,7 +159,8 @@ export default function HeroSection() {
           </div>
           <div className='hero__info'>
             <PText>
-              I love to design and make new web experiences for people.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              dignissimos totam nisi.{" "}
             </PText>
             <Button btnLink='/projects' btnText='See my Works' />
           </div>

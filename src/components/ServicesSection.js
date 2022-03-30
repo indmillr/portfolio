@@ -33,18 +33,18 @@ export default function ServicesSection() {
             icon={<MdDesktopMac />}
             title={"Website Design"}
             desc={
-              "I do ui/ux design for the webiste to provide a unique look and feel."
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempore quasi cum debitis maiores?"
             }
           />
           <ServicesSectionItem
             icon={<MdCode />}
             title='Web Dev'
-            desc='I also develop the website for top performance.'
+            desc='Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
             title='App Dev'
-            desc='I develop mobile applications with eye-catching ui.'
+            desc='Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
           />
         </div>
       </div>
