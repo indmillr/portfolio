@@ -1,6 +1,7 @@
 import React from "react";
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import styled from "styled-components";
+import ContactForm from "./ContactForm";
 import ContactInfoItem from "./ContactInfoItem";
 import SectionTitle from "./SectionTitle";
 
@@ -19,7 +20,9 @@ export default function ContactSection() {
             <ContactInfoItem icon={<MdEmail />} text='indmillr@gmail.com' />
             <ContactInfoItem text='Nixa, MO USA' />
           </div>
-          <div className='right'>Contact Form</div>
+          <div className='right'>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </ContactSectionStyle>
