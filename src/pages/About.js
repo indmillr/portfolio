@@ -72,7 +72,7 @@ const AboutPageStyles = styled.div`
   }
 `;
 
-export default function About2() {
+export default function About() {
   return (
     <AboutPageStyles>
       <div className='container'>
@@ -115,15 +115,11 @@ export default function About2() {
             <h1 className='about__info__heading'>Education</h1>
             <AboutInfoItem
               title='School'
-              items={["Missouri State University"]}
+              items={["Missouri State University", "Accounting & Finance"]}
             />
             <AboutInfoItem
               title='School'
-              items={["Missouri State University"]}
-            />
-            <AboutInfoItem
-              title='School'
-              items={["Missouri State University"]}
+              items={["Ozarks Technical Comm College", "AA"]}
             />
           </div>
 
@@ -144,9 +140,9 @@ export default function About2() {
           </div>
 
           <div className='about__info__item'>
-            <h1 className='about__info__heading'>Experience</h1>
+            <h1 className='about__info__heading'>Certifications</h1>
             <AboutInfoItem
-              title='School'
+              title='freeCodeCamp'
               items={["Missouri State University"]}
             />
             <AboutInfoItem
