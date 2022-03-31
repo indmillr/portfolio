@@ -4,7 +4,8 @@ import Button from "./Button";
 import PText from "./PText";
 
 const ContactBannerStyles = styled.div`
-  padding: 10rem, 0;
+  padding: 3rem, 0;
+  margin-bottom: 2rem;
   .contactBanner__wrapper {
     background-color: var(--deep-dark);
     border-radius: 12px;
