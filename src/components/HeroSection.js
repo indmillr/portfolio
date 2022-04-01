@@ -5,6 +5,7 @@ import PText from "./PText";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 import styled from "styled-components";
+import { TiSocialFacebook } from "react-icons/md";
 
 const HeroStyles = styled.div`
   .hero {
@@ -195,7 +196,7 @@ export default function HeroSection() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    FB
+                    <TiSocialFacebook />
                   </a>
                 </li>
               </ul>
