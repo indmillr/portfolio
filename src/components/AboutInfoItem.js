@@ -27,7 +27,6 @@ const AboutItemStyles = styled.div`
     align-items: flex-start;
     gap: 1rem;
     .items {
-      position: ;
       gap: 1rem;
     }
     .title {

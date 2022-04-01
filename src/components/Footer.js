@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
         <div className='footer__col2'>
           <FooterColumn
-            heading='Important Links'
+            heading='Site Nav'
             links={[
               {
                 title: "Home",
@@ -94,10 +94,10 @@ export default function Footer() {
         </div>
         <div className='footer__col3'>
           <FooterColumn
-            heading='Contact Info'
+            heading='Contact'
             links={[
               {
-                title: "(123) 456-7890",
+                title: "(417) 908-7165",
                 path: "tel:1234567890",
               },
               {
@@ -113,7 +113,7 @@ export default function Footer() {
         </div>
         <div className='footer__col4'>
           <FooterColumn
-            heading='Social Links'
+            heading='Social'
             links={[
               {
                 title: "LinkedIn",

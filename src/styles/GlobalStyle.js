@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -11,8 +11,12 @@ const GlobalStyles = createGlobalStyle`
     --gray-1: #BCB4B4;
     --deep-dark: #1E1E1E;
     --gray-2: #363636;
-    --white : white;
+    --white : #c3c1b5;
     --black: black;
+    --hoverg: #90c260;
+    --hoverb: #01ffe6;
+    --hovery: #e4e9b2;
+    --transition: all 0.1s linear;
   }
   html{
     font-size: 10px;
@@ -24,6 +28,10 @@ const GlobalStyles = createGlobalStyle`
   }
   a{
     text-decoration: none;
+  }
+  a:hover {
+    transition: var(--transition);
+    color: var(--hoverg);
   }
   img, svg{
     width: 100%;
@@ -37,21 +45,6 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-  }
-/* Smooth Scroll  */
-  [data-scrollbar] {
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--gray-1);
-    .scroll-content {
-      background-color: var(--dark-bg);
-    }
-    .scrollbar-track.scrollbar-track-y {
-      background: var(--deep-dark);
-      .scrollbar-thumb-y {
-        background: var(--gray-1);
-      }
-    }
   }
 `;
 export default GlobalStyles;

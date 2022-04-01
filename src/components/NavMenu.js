@@ -34,7 +34,7 @@ const NavMenuStyles = styled.div`
       outline: none;
     }
     .active {
-      color: var(--white);
+      color: var(--hovery);
     }
   }
   .mobile-menu-icon {

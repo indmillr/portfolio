@@ -5,7 +5,11 @@ import PText from "./PText";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 import styled from "styled-components";
-import { TiSocialFacebook } from "react-icons/md";
+import {
+  TiSocialFacebook,
+  TiSocialLinkedin,
+  TiSocialGithub,
+} from "react-icons/ti";
 
 const HeroStyles = styled.div`
   .hero {
@@ -48,7 +52,6 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    bottom: 20px;
     width: 50px;
   }
   .hero__social {
@@ -56,6 +59,7 @@ const HeroStyles = styled.div`
   }
   .hero__scrollDown {
     right: 50px;
+    bottom: 20px;
   }
   .hero__social__indicator,
   .hero__scrollDown {
@@ -85,8 +89,7 @@ const HeroStyles = styled.div`
       }
       a {
         display: inline-block;
-        font-size: 1.6rem;
-        transform: rotate(-90deg);
+        font-size: 3.5rem;
         letter-spacing: 5px;
         margin-bottom: 2rem;
       }
@@ -112,7 +115,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: 10px;
+      bottom: 30px;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -127,7 +130,7 @@ const HeroStyles = styled.div`
         ul {
           li {
             a {
-              font-size: 1.2rem;
+              font-size: 1.6rem;
               margin-bottom: 1rem;
             }
           }
@@ -137,7 +140,7 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
-      bottom: 10px;
+      bottom: 50px;
       gap: 1rem;
       p {
         font-size: 1.3rem;
@@ -178,7 +181,7 @@ export default function HeroSection() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    GH
+                    <TiSocialGithub />
                   </a>
                 </li>
                 <li>
@@ -187,7 +190,7 @@ export default function HeroSection() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    LI
+                    <TiSocialLinkedin />
                   </a>
                 </li>
                 <li>
