@@ -84,6 +84,9 @@ const HeroStyles = styled.div`
       li {
         margin-bottom: 0rem;
       }
+      li:hover {
+        color: var(--red);
+      }
       a {
         display: inline-block;
         font-size: 4rem;
