@@ -117,50 +117,33 @@ export default function About() {
           <div className='about__info__item'>
             <h1 className='about__info__heading'>Education</h1>
             <AboutInfoItem
+              link='https://www.missouristateuniversity.edu'
               title='Missouri State University'
               items={["Accounting", "Finance"]}
             />
             <AboutInfoItem
+              link='https://www.otc.edu'
               title='Ozarks Technical College'
               items={["Associate of Arts"]}
             />
           </div>
           <div className='about__info__item'>
             <h1 className='about__info__heading'>Certifications</h1>
-            <a
-              class='link'
-              href='https://freecodecamp.org/certification/indmillr/responsive-web-design'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <AboutInfoItem
-                title='Responsive Web Design'
-                link=''
-                items={["HTML", "CSS", "Accessibility"]}
-              />
-            </a>
-            <a
-              class='link'
-              href='https://freecodecamp.org/certification/indmillr/javascript-algorithms-and-data-structures'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <AboutInfoItem
-                title='Javascript Alogorithms and Data Structures'
-                items={["JS/ES6", "Regex", "Debugging", "OOP"]}
-              />
-            </a>
-            <a
-              href='https://freecodecamp.org/certification/indmillr/front-end-development-libraries'
-              target='_blank'
-              class='link'
-              rel='noreferrer'
-            >
-              <AboutInfoItem
-                title='Frontend Dev Libraries'
-                items={["Bootstrap", "jQuery", "SASS", "React"]}
-              />
-            </a>
+            <AboutInfoItem
+              title='Responsive Web Design'
+              link='https://freecodecamp.org/certification/indmillr/responsive-web-design'
+              items={["HTML", "CSS", "Accessibility"]}
+            />
+            <AboutInfoItem
+              title='Javascript Alogorithms and Data Structures'
+              link='https://freecodecamp.org/certification/indmillr/javascript-algorithms-and-data-structures'
+              items={["JS/ES6", "Regex", "Debugging", "OOP"]}
+            />
+            <AboutInfoItem
+              title='Frontend Dev Libraries'
+              link='https://freecodecamp.org/certification/indmillr/front-end-development-libraries'
+              items={["Bootstrap", "jQuery", "SASS", "React"]}
+            />
           </div>
         </div>
       </div>

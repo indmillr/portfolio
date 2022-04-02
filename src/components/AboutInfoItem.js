@@ -12,9 +12,9 @@ const AboutItemStyles = styled.div`
   .title {
     font-size: 2.4rem;
   }
-  .title:hover {
-    color: var(--red);
-  }
+    h1:hover {
+      color: var(--red);
+    }
   .items {
     display: flex;
     gap: 1.5rem;
@@ -43,11 +43,14 @@ const AboutItemStyles = styled.div`
 
 export default function AboutInfoItem({
   title = "This is Title",
+  link = "#",
   items = ["HTML", "CSS", "JS"],
 }) {
   return (
     <AboutItemStyles>
-      <h1 className='title'>{title}</h1>
+      <a href={link} target='_blank' rel='noreferrer'>
+        <h1 className='title'>{title}</h1>
+      </a>
       <div className='items'>
         {items.map((item, index) => (
           <div className='item' key={index}>
