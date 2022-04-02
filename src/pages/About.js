@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import PText from "../components/PText";
-import AboutImg from "../assets/images/about-page-img.png";
+import AboutImg from "../assets/images/about.png";
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
@@ -54,6 +54,9 @@ const AboutPageStyles = styled.div`
     font-size: 3.6rem;
     text-transform: uppercase;
   }
+  .link:hover {
+    color: var(--red);
+  }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
@@ -79,9 +82,9 @@ export default function About() {
         <div className='top-section'>
           <div className='left'>
             <p className='about__subheading'>
-              Hi! I am <span>Ian Miller</span>
+              Hi! My name is <span>Ian Miller</span>
             </p>
-            <h2 className='about__heading'>A freelance web developer</h2>
+            <h2 className='about__heading'>Designer & Developer</h2>
             <div className='about__info'>
               <PText>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -114,45 +117,50 @@ export default function About() {
           <div className='about__info__item'>
             <h1 className='about__info__heading'>Education</h1>
             <AboutInfoItem
-              title='School'
-              items={["Missouri State University", "Accounting & Finance"]}
+              title='Missouri State University'
+              items={["Accounting", "Finance"]}
             />
             <AboutInfoItem
-              title='School'
-              items={["Ozarks Technical Comm College", "AA"]}
+              title='Ozarks Technical College'
+              items={["Associate of Arts"]}
             />
           </div>
-
-          <div className='about__info__item'>
-            <h1 className='about__info__heading'>Skills</h1>
-            <AboutInfoItem
-              title='FrontEnd'
-              items={["HTML", "CSS", "JS", "REACT"]}
-            />
-            <AboutInfoItem
-              title='School'
-              items={["Missouri State University"]}
-            />
-            <AboutInfoItem
-              title='School'
-              items={["Missouri State University"]}
-            />
-          </div>
-
           <div className='about__info__item'>
             <h1 className='about__info__heading'>Certifications</h1>
-            <AboutInfoItem
-              title='freeCodeCamp'
-              items={["Missouri State University"]}
-            />
-            <AboutInfoItem
-              title='School'
-              items={["Missouri State University"]}
-            />
-            <AboutInfoItem
-              title='School'
-              items={["Missouri State University"]}
-            />
+            <a
+              class='link'
+              href='https://freecodecamp.org/certification/indmillr/responsive-web-design'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <AboutInfoItem
+                title='Responsive Web Design'
+                link=''
+                items={["HTML", "CSS", "Accessibility"]}
+              />
+            </a>
+            <a
+              class='link'
+              href='https://freecodecamp.org/certification/indmillr/javascript-algorithms-and-data-structures'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <AboutInfoItem
+                title='Javascript Alogorithms and Data Structures'
+                items={["JS/ES6", "Regex", "Debugging", "OOP"]}
+              />
+            </a>
+            <a
+              href='https://freecodecamp.org/certification/indmillr/front-end-development-libraries'
+              target='_blank'
+              class='link'
+              rel='noreferrer'
+            >
+              <AboutInfoItem
+                title='Frontend Dev Libraries'
+                items={["Bootstrap", "jQuery", "SASS", "React"]}
+              />
+            </a>
           </div>
         </div>
       </div>

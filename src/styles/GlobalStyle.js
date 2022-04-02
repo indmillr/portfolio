@@ -1,21 +1,25 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-*{
+*,
+::after,
+::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
-    --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
+    --dark-bg: #353535;
+    --gray-1: #bbbbbf;
+    --deep-dark: #242424;
     --gray-2: #363636;
-    --white : #c3c1b5;
+    --white : #f0f7f4;
     --black: black;
-    --hoverg: #90c260;
-    --hoverb: #01ffe6;
-    --hovery: #e4e9b2;
+    --green: #a4b8ae;
+    --blue: #88d9e6;
+    --yellow: #f4d58d;
+    --red: #e75a7c;
+    --shadow: 0 15px 20px rgba(255, 255,255, 0.25);
     --transition: all 0.1s linear;
   }
   html{
@@ -30,8 +34,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
   a:hover {
-    transition: var(--transition);
-    color: var(--hoverg);
+    color: var(--red);
   }
   img, svg{
     width: 100%;

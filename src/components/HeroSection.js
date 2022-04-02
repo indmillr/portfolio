@@ -2,7 +2,6 @@ import React from "react";
 import HeroImg from "../assets/images/hero.png";
 import Button from "./Button";
 import PText from "./PText";
-import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
 import styled from "styled-components";
 import {
@@ -56,13 +55,11 @@ const HeroStyles = styled.div`
   }
   .hero__social {
     left: 50px;
+    bottom: 10px;
   }
   .hero__scrollDown {
     right: 50px;
     bottom: 20px;
-  }
-  .hero__social__indicator,
-  .hero__scrollDown {
     width: 50px;
     p {
       font-size: 1.6rem;
@@ -85,13 +82,13 @@ const HeroStyles = styled.div`
   .hero__social__text {
     ul {
       li {
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
       }
       a {
         display: inline-block;
-        font-size: 3.5rem;
+        font-size: 4rem;
         letter-spacing: 5px;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -115,7 +112,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: 30px;
+      bottom: 40px;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -130,7 +127,7 @@ const HeroStyles = styled.div`
         ul {
           li {
             a {
-              font-size: 1.6rem;
+              font-size: 2rem;
               margin-bottom: 1rem;
             }
           }
@@ -140,7 +137,7 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
-      bottom: 50px;
+      bottom: 60px;
       gap: 1rem;
       p {
         font-size: 1.3rem;
@@ -155,7 +152,7 @@ export default function HeroSection() {
       <div className='hero'>
         <div className='container'>
           <h1 className='hero__heading'>
-            <span>Hello this is</span>
+            <span>Hello! My name is</span>
             <span className='hero__name'>Ian Miller</span>
           </h1>
           <div className='hero__img'>
@@ -163,16 +160,13 @@ export default function HeroSection() {
           </div>
           <div className='hero__info'>
             <PText>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              dignissimos totam nisi.{" "}
+              I create beautiful and functional websites
+              <br />
+              and rich, interactive web apps.{" "}
             </PText>
-            <Button btnLink='/projects' btnText='See my Works' />
+            <Button btnLink='/projects' btnText='Check it out' />
           </div>
           <div className='hero__social'>
-            <div className='hero__social__indicator'>
-              <p>Follow</p>
-              <img src={SocialMediaArrow} alt='' />
-            </div>
             <div className='hero__social__text'>
               <ul>
                 <li>
@@ -181,7 +175,7 @@ export default function HeroSection() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <TiSocialGithub />
+                    <TiSocialGithub className='icon' />
                   </a>
                 </li>
                 <li>
@@ -190,7 +184,7 @@ export default function HeroSection() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <TiSocialLinkedin />
+                    <TiSocialLinkedin className='icon' />
                   </a>
                 </li>
                 <li>
@@ -199,7 +193,7 @@ export default function HeroSection() {
                     target='_blank'
                     rel='noreferrer'
                   >
-                    <TiSocialFacebook />
+                    <TiSocialFacebook className='icon' />
                   </a>
                 </li>
               </ul>

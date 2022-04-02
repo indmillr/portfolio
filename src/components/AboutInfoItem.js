@@ -4,18 +4,22 @@ import PText from "./PText";
 
 const AboutItemStyles = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
   margin-top: 3rem;
   position: relative;
   .title {
     font-size: 2.4rem;
   }
+  .title:hover {
+    color: var(--red);
+  }
   .items {
     display: flex;
     gap: 1.5rem;
-    position: absolute;
     left: 18rem;
+    margin-top: 1rem;
   }
   .item {
     background-color: var(--deep-dark);
@@ -27,6 +31,7 @@ const AboutItemStyles = styled.div`
     align-items: flex-start;
     gap: 1rem;
     .items {
+      position: initial;
       gap: 1rem;
     }
     .title {

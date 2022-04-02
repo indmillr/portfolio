@@ -10,9 +10,14 @@ const ButtonStyle = styled.div`
       props.outline ? "transparent" : "var(--gray-1)"};
     padding: 0.7em 2em;
     border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
     display: inline-block;
     border: 2px solid var(--gray-1);
     color: ${(props) => (props.outline ? "var(--gray-1)" : "var(--black)")};
+  }
+  .button:hover {
+    color: var(--red);
   }
   @media only screen and (max-width: 768px) {
     .button {

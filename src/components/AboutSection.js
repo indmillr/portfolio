@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import PText from "./PText";
 import Button from "./Button";
-import AboutImg from "../assets/images/about-sec-img.png";
+import AboutImg from "../assets/images/about.png";
 import styled from "styled-components";
 
 const AboutSectionStyle = styled.div`
@@ -23,6 +23,9 @@ const AboutSectionStyle = styled.div`
   .para {
     margin-top: 2rem;
     margin-left: 0;
+  }
+  img {
+    border: 2px solid var(--gray-1);
   }
   .aboutSection__buttons {
     display: flex;

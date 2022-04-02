@@ -28,7 +28,7 @@ const MapStyles = styled.div`
     display: inline-block;
     font-size: 1.6rem;
     margin-top: 3rem;
-    text-decoration: underline;
+    text-decoration: none;
   }
   @media only screen and (max-width: 768px) {
     background-position: 80% center;
