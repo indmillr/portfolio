@@ -28,6 +28,9 @@ const ContactSectionStyle = styled.div`
     width: 100%;
     max-width: 500px;
   }
+  .left:hover {
+    color: var(--red);
+  }
   .right {
     max-width: 500px;
     width: 100%;
