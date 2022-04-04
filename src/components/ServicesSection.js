@@ -31,20 +31,20 @@ export default function ServicesSection() {
         <div className='services__allItems'>
           <ServicesSectionItem
             icon={<MdDesktopMac />}
-            title={"Website Design"}
+            title={"Design"}
             desc={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempore quasi cum debitis maiores?"
+              "From classy professional websites and landing pages to flashy, eye-catching SPAs, I can translate ideas into reality."
             }
           />
           <ServicesSectionItem
             icon={<MdCode />}
-            title='Web Dev'
-            desc='Lorem, ipsum dolor sit amet consectetur adipisicing elit.'
+            title='Development'
+            desc='I provide maintenance and support for the continued function of a smooth and responsive user experience.'
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
-            title='App Dev'
-            desc='Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+            title='Applications'
+            desc='Lightweight Single-Page Applications that are rich with features and design that will stand out.'
           />
         </div>
       </div>

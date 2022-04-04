@@ -115,7 +115,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: 40px;
+      bottom: 50px;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -131,7 +131,7 @@ const HeroStyles = styled.div`
           li {
             a {
               font-size: 2rem;
-              margin-bottom: 1rem;
+              margin-bottom: 1.5rem;
             }
           }
         }
@@ -163,9 +163,8 @@ export default function HeroSection() {
           </div>
           <div className='hero__info'>
             <PText>
-              I create beautiful and functional websites
-              <br />
-              and rich, interactive web apps.{" "}
+              I design and create beautiful and functional websites as well as
+              interactive web apps.{" "}
             </PText>
             <Button btnLink='/projects' btnText='Check it out' />
           </div>

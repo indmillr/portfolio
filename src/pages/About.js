@@ -82,7 +82,7 @@ export default function About() {
         <div className='top-section'>
           <div className='left'>
             <p className='about__subheading'>
-              Hi! My name is <span>Ian Miller</span>
+              Hi! I am <span>Ian Miller</span>
             </p>
             <h2 className='about__heading'>Designer & Developer</h2>
             <div className='about__info'>
