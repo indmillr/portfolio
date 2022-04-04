@@ -87,24 +87,13 @@ export default function About() {
             <h2 className='about__heading'>Designer & Developer</h2>
             <div className='about__info'>
               <PText>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate, omnis. Ex nesciunt aliquid ducimus ab? Distinctio,
-                corporis, cumque doloremque consequuntur iste expedita dicta sit
-                aliquam fugit, sint perferendis praesentium iusto ab quasi.
-                Beatae quos id adipisci, odit eos facere eius!
+                Hungry and self-motivated with a passion for writing code.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                quibusdam ut laborum. Quibusdam, exercitationem odit deserunt
-                atque consectetur omnis animi facilis, fugit optio laudantium
-                eos, dignissimos possimus tempora similique quos?
+            Seeking an opportunity to begin my dream career. I love writing code and look forward to solving challenging problems. I always appreciate beautiful design. My competitive edge keeps me eager to learn.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                inventore cupiditate nemo exercitationem dicta fugiat quisquam
-                blanditiis voluptatum sequi adipisci vel est aliquam rem fugit
-                commodi dolor cum tempore, aperiam, expedita eius accusantium
-                tempora eos officia qui. Porro, asperiores accusamus.
+                I have extensive experience in a professional setting and honed soft skills in a culture of team development and business growth.
               </PText>
             </div>
             <Button btnText='Download Resume' btnLink='#' />
