@@ -33,18 +33,18 @@ export default function ServicesSection() {
             icon={<MdDesktopMac />}
             title={"Design"}
             desc={
-              "From classy professional websites and landing pages to flashy, eye-catching SPAs, I can translate ideas into reality."
+              "Translate ideas into reality. From classy professional websites and landing pages to flashy, eye-catching SPAs."
             }
           />
           <ServicesSectionItem
             icon={<MdCode />}
             title='Development'
-            desc='I provide maintenance and support for the continued function of a smooth and responsive user experience.'
+            desc='Provide maintenance and support for the continued function of a smooth and responsive user experience.'
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
             title='Applications'
-            desc='Lightweight Single-Page Applications that are rich with features and design that will stand out.'
+            desc='Build lightweight single-page applications with features and design that will stand out.'
           />
         </div>
       </div>
