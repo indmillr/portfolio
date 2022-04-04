@@ -56,9 +56,20 @@ export default function ContactSection() {
         <SectionTitle heading='Contact' subheading='Get in touch' />
         <div className='contactSection__wrapper'>
           <div className='left'>
-            <ContactInfoItem icon={<MdLocalPhone />} text='(123) 456-7890' />
-            <ContactInfoItem icon={<MdEmail />} text='indmillr@gmail.com' />
-            <ContactInfoItem text='Nixa, MO USA' />
+            <ContactInfoItem
+              icon={<MdLocalPhone />}
+              text='(417) 908-7165'
+              link='tel:4179087165'
+            />
+            <ContactInfoItem
+              icon={<MdEmail />}
+              text='indmillr@gmail.com'
+              link='mailto:indmillr@gmail.com'
+            />
+            <ContactInfoItem
+              text='Nixa, MO USA'
+              link='https://www.google.com/maps/place/Nixa,+MO+65714/@37.0464147,-93.312616,14z/data=!3m1!4b1!4m5!3m4!1s0x87cf6eed13ac8447:0xacf1a5ed53154eb7!8m2!3d37.0433863!4d-93.294353'
+            />
           </div>
           <div className='right'>
             <ContactForm />

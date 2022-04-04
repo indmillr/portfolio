@@ -26,16 +26,21 @@ const FormStyle = styled.div`
     min-height: 250px;
     resize: vertical;
   }
-  button[type="submit"] {
-    background-color: var(--gray-1);
-    color: var(--black);
-    font-size: 2rem;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 1rem 4rem;
+  .button {
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+      props.outline ? "transparent" : "var(--gray-1)"};
+    padding: 0.7em 2em;
     border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: inline-block;
     cursor: pointer;
+    border: 2px solid var(--gray-1);
+    color: ${(props) => (props.outline ? "var(--gray-1)" : "var(--black)")};
+  }
+  .button:hover {
+    color: var(--red);
   }
 `;
 
@@ -46,7 +51,7 @@ export default function ContactForm() {
 
   return (
     <FormStyle>
-      <form>
+      <form action='mailto:indmillr@gmail.com'>
         <div clasName='form-group'>
           <label htmlFor='name'>
             Your Name:
@@ -56,6 +61,7 @@ export default function ContactForm() {
               name='name'
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
           </label>
         </div>
@@ -68,6 +74,7 @@ export default function ContactForm() {
               name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </label>
         </div>
@@ -80,10 +87,11 @@ export default function ContactForm() {
               name='message'
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             />
           </label>
         </div>
-        <button type='submit'>Send</button>
+        <input type='submit' value='Send' className='button' />
       </form>
     </FormStyle>
   );

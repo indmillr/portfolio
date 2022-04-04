@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import projectImg from "../assets/images/projectImg.png";
+import projectImg from "../assets/images/calc.jpg";
 
 const ProjectItemStyle = styled.div`
   .projectItem__img {
@@ -15,6 +15,10 @@ const ProjectItemStyle = styled.div`
       height: 100%;
     }
   }
+  h3:hover {
+    color: var(--red);
+  }
+
   .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
@@ -29,6 +33,10 @@ const ProjectItemStyle = styled.div`
     font-family: "RobotoMono Regular";
     margin-top: 1rem;
   }
+  .projectItem__tools {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -40,6 +48,7 @@ export default function ProjectItem({
   img = projectImg,
   title = "Project Name",
   desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, autem.",
+  tools = "HTML | CSS | JS",
 }) {
   return (
     <ProjectItemStyle>
@@ -51,6 +60,7 @@ export default function ProjectItem({
           <h3 className='projectItem__title'>{title}</h3>
         </Link>
         <p className='projectItem__desc'>{desc}</p>
+        <p className='projectItem__tools'>{tools}</p>
       </div>
     </ProjectItemStyle>
   );

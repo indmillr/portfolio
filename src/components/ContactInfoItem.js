@@ -12,7 +12,6 @@ const ItemStyle = styled.div`
   border-radius: 8px;
   margin-bottom: 2rem;
   .icon {
-    color: var(--white);
     background-color: var(--gray-2);
     padding: 1.3rem;
     align-items: center;
@@ -27,12 +26,15 @@ const ItemStyle = styled.div`
 export default function ContactInfoItem({
   icon = <MdPlace></MdPlace>,
   text = "This is INFO",
+  link = "#",
 }) {
   return (
     <ItemStyle>
       <div className='icon'>{icon}</div>
       <div className='info'>
-        <PText>{text}</PText>
+        <a href={link}>
+          <PText>{text}</PText>
+        </a>
       </div>
     </ItemStyle>
   );
