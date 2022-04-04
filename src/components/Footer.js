@@ -59,10 +59,7 @@ export default function Footer() {
         <div className='footer__col1'>
           <h1 className='footer__col1__title'>Ian Miller</h1>
           <PText>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et
-            rem voluptatibus incidunt modi provident accusamus inventore.
-            Commodi mollitia molestias fuga. Omnis exercitationem repellendus
-            dignissimos ratione quaerat ullam dolor illum dolores.
+            Following a continued passion for beautiful design and creative solutions to interesting problems.
           </PText>
         </div>
         <div className='footer__col2'>
