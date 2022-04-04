@@ -27,7 +27,7 @@ export default function ServicesSection() {
   return (
     <ServicesItemStyles>
       <div className='container'>
-        <SectionTitle heading='Services' subheading='What I will do for you' />
+        <SectionTitle heading='Skills' subheading='What can I do?' />
         <div className='services__allItems'>
           <ServicesSectionItem
             icon={<MdDesktopMac />}
