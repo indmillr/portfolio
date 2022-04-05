@@ -83,7 +83,7 @@ export default function AboutSection() {
             heading='About Me'
           />
           <PText>
-            Excited for the opportunity to pursue my passion. Committed to success and driven to continue to learn.
+            Excited for the opportunity to pursue my passion. Driven to continue to learn and committed to succeeding.
           </PText>
           <div className='aboutSection__buttons'>
             <Button btnLink='/projects' btnText='My Projects' />
