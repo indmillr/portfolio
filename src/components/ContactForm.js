@@ -21,7 +21,7 @@ const FormStyle = styled.div`
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--gray-1);
+    color: var(--red);
     background-color: var(--deep-dark);
     outline: none;
     border: none;
@@ -86,7 +86,7 @@ export default function ContactForm() {
           control={Input}
           label='Email'
           name='reply_to'
-          placeholder=''
+          placeholder='(your email)'
           required
           icon='mail'
           iconPosition='left'
@@ -96,7 +96,7 @@ export default function ContactForm() {
           control={Input}
           label='Name'
           name='from_name'
-          placeholder=''
+          placeholder='(your name)'
           required
           icon='user circle'
           iconPosition='left'
@@ -106,7 +106,7 @@ export default function ContactForm() {
           control={TextArea}
           label='Message'
           name='message'
-          placeholder=''
+          placeholder='(your message)'
           required
         />
 

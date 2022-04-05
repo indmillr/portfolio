@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import projectImg from "../assets/images/calc.jpg";
 
@@ -36,6 +35,9 @@ const ProjectItemStyle = styled.div`
   .projectItem__tools {
     margin-top: 1.5rem;
     font-size: 1.25rem;
+    font-family: "RobotoMono Regular";
+    margin-top: 1rem;
+    color: var(--red);
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -49,22 +51,22 @@ export default function ProjectItem({
   title = "Project Name",
   desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, autem.",
   tools = "",
-  link = "#",
+  link = "/projects",
 }) {
   return (
     <ProjectItemStyle>
-      <Link
-        to={link}
+      <a
+        href={link}
         target='_blank'
         rel='noreferrer'
         className='projectItem__img'
       >
         <img src={img} alt='project img' />
-      </Link>
+      </a>
       <div className='projectItem__info'>
-        <Link to={link} target='_blank' rel='noreferrer'>
+        <a href={link} target='_blank' rel='noreferrer'>
           <h3 className='projectItem__title'>{title}</h3>
-        </Link>
+        </a>
         <p className='projectItem__desc'>{desc}</p>
         <p className='projectItem__tools'>{tools}</p>
       </div>
