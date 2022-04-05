@@ -1,5 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+import { Form, Input, TextArea } from "semantic-ui-react";
 import styled from "styled-components";
+import Swal from "sweetalert2";
+import { init } from "@emailjs/browser";
+import emailjs from "emailjs-com";
+init("iC7Fva3covAMd6Kef");
 
 const FormStyle = styled.div`
   width: 100%;
@@ -10,8 +15,9 @@ const FormStyle = styled.div`
   label {
     font-size: 1.8rem;
   }
-  input,
-  textarea {
+  #form-input-control-email,
+  #form-input-control-last-name,
+  #form-textarea-control-opinion {
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
@@ -22,11 +28,11 @@ const FormStyle = styled.div`
     border-radius: 8px;
     margin-top: 1rem;
   }
-  textarea {
+  #form-textarea-control-opinion {
     min-height: 250px;
     resize: vertical;
   }
-  .button {
+  button {
     font-size: 2.2rem;
     background-color: ${(props) =>
       props.outline ? "transparent" : "var(--gray-1)"};
@@ -35,64 +41,79 @@ const FormStyle = styled.div`
     box-shadow: var(--shadow);
     transition: var(--transition);
     display: inline-block;
+    margin-top: 1rem;
     cursor: pointer;
     border: 2px solid var(--gray-1);
     color: ${(props) => (props.outline ? "var(--gray-1)" : "var(--black)")};
   }
-  .button:hover {
+  button:hover {
     color: var(--red);
   }
 `;
 
 export default function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const SERVICE_ID = "service_56uvt0m";
+  const TEMPLATE_ID = "template_8g5rs3r";
+  const USER_ID = "iC7Fva3covAMd6Kef";
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully!",
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Oops! Something went wrong.",
+          text: error.text,
+        });
+      },
+    );
+    e.target.reset();
+  };
 
   return (
     <FormStyle>
-      <form action='mailto:indmillr@gmail.com'>
-        <div clasName='form-group'>
-          <label htmlFor='name'>
-            Your Name:
-            <input
-              type='text'
-              id='name'
-              name='name'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div clasName='form-group'>
-          <label htmlFor='email'>
-            Your Email:
-            <input
-              type='text'
-              id='email'
-              name='email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div clasName='form-group'>
-          <label htmlFor='message'>
-            Your Message:
-            <textarea
-              type='text'
-              id='message'
-              name='message'
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <input type='submit' value='Send' className='button' />
-      </form>
+      <Form onSubmit={handleOnSubmit}>
+        <Form.Field
+          id='form-input-control-email'
+          control={Input}
+          label='Email'
+          name='reply_to'
+          placeholder=''
+          required
+          icon='mail'
+          iconPosition='left'
+        />
+        <Form.Field
+          id='form-input-control-last-name'
+          control={Input}
+          label='Name'
+          name='from_name'
+          placeholder=''
+          required
+          icon='user circle'
+          iconPosition='left'
+        />
+        <Form.Field
+          id='form-textarea-control-opinion'
+          control={TextArea}
+          label='Message'
+          name='message'
+          placeholder=''
+          required
+        />
+
+        <button type='submit' value='Send' className='button'>
+          Send
+        </button>
+      </Form>
     </FormStyle>
   );
 }
