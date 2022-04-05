@@ -9,16 +9,13 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #353535;
-    --gray-1: #bbbbbf;
-    --deep-dark: #242424;
-    --gray-2: #363636;
-    --white : #f0f7f4;
-    --black: black;
-    --green: #a4b8ae;
-    --blue: #88d9e6;
-    --yellow: #f4d58d;
-    --red: #e75a7c;
+    --dark-bg: #215660;
+    --gray-1: #eeebd3;
+    --deep-dark: #17353a;
+    --gray-2: #437882;
+    --white : #f4f4f8;
+    --black: #0d1321;
+    --red: #53ead9;
     --shadow: 0 15px 20px rgba(255, 255,255, 0.25);
     --transition: all 0.1s linear;
   }

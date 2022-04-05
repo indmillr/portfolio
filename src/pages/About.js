@@ -110,17 +110,20 @@ export default function About() {
             <h2 className='about__heading'>Designer & Developer</h2>
             <div className='about__info'>
               <PText>
-                Hungry and self-motivated with a passion for writing code.
+                Hungry and self-motivated with a passion for writing code and a
+                soft-spot for symmetry and color.
                 <br />
                 <br />
-                Seeking an opportunity to begin my dream career. I love writing
-                code and look forward to solving challenging problems. I always
-                appreciate beautiful design. My competitive edge keeps me eager
-                to learn.
+                I am seeking an opportunity to begin my dream career. I love to
+                design and create things and I always look forward to solving
+                challenging problems. My competitive edge keeps me eager to
+                continue learning.
                 <br />
-                <br />I have extensive experience in a professional setting and
-                honed soft skills in a culture of team development and business
-                growth.
+                <br />
+                My extensive experience in a professional setting has allowed me
+                to hone my soft skills in a culture of team development and
+                business growth and has created my ability to fluently
+                communicate with any link of the business chain.
               </PText>
             </div>
             <button onClick={saveFile} value='Download Resume'>
