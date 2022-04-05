@@ -57,9 +57,9 @@ export default function ProjectItem({
     <ProjectItemStyle>
       <a
         href={link}
+        className='projectItem__img'
         target='_blank'
         rel='noreferrer'
-        className='projectItem__img'
       >
         <img src={img} alt='project img' />
       </a>
