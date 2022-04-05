@@ -1,12 +1,10 @@
 import React from "react";
-import Button from "../components/Button";
 import PText from "../components/PText";
 import AboutImg from "../assets/images/about.png";
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
 import { saveAs } from "file-saver";
-import { MdRestaurantMenu } from "react-icons/md";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -98,7 +96,7 @@ const AboutPageStyles = styled.div`
 
 export default function About() {
   const saveFile = () => {
-    saveAs("../assets/files/IanMiller-Resume.pdf", "IanMiller-Resume.pdf");
+    saveAs("../assets/files/Resume--IanMiller.pdf", "Resume--IanMiller.pdf");
   };
 
   return (

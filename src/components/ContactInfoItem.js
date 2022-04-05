@@ -21,12 +21,6 @@ const ItemStyle = styled.div`
   svg {
     width: 3.5rem;
   }
-  a {
-    color: var(--red);
-  }
-  a:hover {
-    color: var(--red);
-  }
 `;
 
 export default function ContactInfoItem({
