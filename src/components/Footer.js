@@ -27,6 +27,7 @@ const FooterStyles = styled.div`
     text-align: left;
     padding: 1rem 0;
     margin-top: 5rem;
+    font-size: 0.5rem;
     .para {
       margin-left: 0;
     }
@@ -59,7 +60,8 @@ export default function Footer() {
         <div className='footer__col1'>
           <h1 className='footer__col1__title'>Ian Miller</h1>
           <PText>
-            Following a continued passion for beautiful design and creative solutions to interesting problems.
+            Following a continued passion for beautiful design and creative
+            solutions to interesting problems.
           </PText>
         </div>
         <div className='footer__col2'>
