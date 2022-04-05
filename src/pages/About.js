@@ -5,6 +5,8 @@ import AboutImg from "../assets/images/about.png";
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
+import { saveAs } from "file-saver";
+import { MdRestaurantMenu } from "react-icons/md";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -57,11 +59,30 @@ const AboutPageStyles = styled.div`
   .link:hover {
     color: var(--red);
   }
+  button {
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+      props.outline ? "transparent" : "var(--gray-1)"};
+    padding: 0.7em 2em;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid var(--gray-1);
+    color: ${(props) => (props.outline ? "var(--gray-1)" : "var(--black)")};
+  }
+  button:hover {
+    color: var(--red);
+  }
   @media only screen and (max-width: 768px) {
     padding: 10rem 0;
     .top-section {
       flex-direction: column;
       gap: 5rem;
+    }
+    button {
+      font-size: 1.8rem;
     }
     .about__subheading {
       font-size: 1.8rem;
@@ -76,6 +97,10 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
+  const saveFile = () => {
+    saveAs("../assets/files/IanMiller-Resume.pdf", "IanMiller-Resume.pdf");
+  };
+
   return (
     <AboutPageStyles>
       <div className='container'>
@@ -100,7 +125,9 @@ export default function About() {
                 growth.
               </PText>
             </div>
-            <Button btnText='Download Resume' btnLink='#' />
+            <button onClick={saveFile} value='Download Resume'>
+              Download Resume
+            </button>
           </div>
           <div className='right'>
             <img src={AboutImg} alt='Ian Miller img' />
@@ -139,7 +166,7 @@ export default function About() {
             />
           </div>
           <div className='about__info__item'>
-            <h1 className='about__info__heading'>Work History</h1>
+            <h1 className='about__info__heading'>Professional Experience</h1>
             <AboutInfoItem
               title='Southern Rock Restaurants'
               link='https://freecodecamp.org/certification/indmillr/responsive-web-design'
