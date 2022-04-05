@@ -54,7 +54,7 @@ export default function ProjectItem({
   return (
     <ProjectItemStyle>
       <Link
-        to={link}
+        to={{ pathname: {link} }}
         target='_blank'
         rel='noreferrer'
         className='projectItem__img'
@@ -62,7 +62,7 @@ export default function ProjectItem({
         <img src={img} alt='project img' />
       </Link>
       <div className='projectItem__info'>
-        <Link to={{ pathname:{link} }} target='_blank' rel='noreferrer'>
+        <Link to={ pathname:{link} } target='_blank' rel='noreferrer'>
           <h3 className='projectItem__title'>{title}</h3>
         </Link>
         <p className='projectItem__desc'>{desc}</p>
