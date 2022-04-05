@@ -83,10 +83,7 @@ export default function AboutSection() {
             heading='About Me'
           />
           <PText>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et
-            rem voluptatibus incidunt modi provident accusamus inventore.
-            Commodi mollitia molestias fuga. Omnis exercitationem repellendus
-            dignissimos ratione quaerat ullam dolor illum dolores.
+            Excited for the opportunity to pursue my passion. Committed to success and driven to continue to learn.
           </PText>
           <div className='aboutSection__buttons'>
             <Button btnLink='/projects' btnText='My Projects' />
