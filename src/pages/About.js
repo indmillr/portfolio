@@ -90,10 +90,14 @@ export default function About() {
                 Hungry and self-motivated with a passion for writing code.
                 <br />
                 <br />
-            Seeking an opportunity to begin my dream career. I love writing code and look forward to solving challenging problems. I always appreciate beautiful design. My competitive edge keeps me eager to learn.
+                Seeking an opportunity to begin my dream career. I love writing
+                code and look forward to solving challenging problems. I always
+                appreciate beautiful design. My competitive edge keeps me eager
+                to learn.
                 <br />
-                <br />
-                I have extensive experience in a professional setting and honed soft skills in a culture of team development and business growth.
+                <br />I have extensive experience in a professional setting and
+                honed soft skills in a culture of team development and business
+                growth.
               </PText>
             </div>
             <Button btnText='Download Resume' btnLink='#' />
@@ -132,6 +136,14 @@ export default function About() {
               title='Frontend Dev Libraries'
               link='https://freecodecamp.org/certification/indmillr/front-end-development-libraries'
               items={["Bootstrap", "jQuery", "SASS", "React"]}
+            />
+          </div>
+          <div className='about__info__item'>
+            <h1 className='about__info__heading'>Work History</h1>
+            <AboutInfoItem
+              title='Southern Rock Restaurants'
+              link='https://freecodecamp.org/certification/indmillr/responsive-web-design'
+              items={["General Manager", "2002-Present"]}
             />
           </div>
         </div>
