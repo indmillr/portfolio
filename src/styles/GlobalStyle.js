@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --gray-1: #eeebd3;
     --deep-dark: #17353a;
     --gray-2: #437882;
-    --white : #f4f4f8;
+    --white : #fffdf3;
     --black: #0d1321;
     --red: #53ead9;
     --shadow: 0 15px 20px rgba(255, 255,255, 0.25);
