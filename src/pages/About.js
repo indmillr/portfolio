@@ -95,7 +95,7 @@ const AboutPageStyles = styled.div`
 
 export default function About() {
   const fileRequest = () => {
-    window.location = "../../assets/files/Resume--IanMiller.pdf";
+    window.location = "../assets/files/Resume--IanMiller.pdf";
   };
 
   return (
