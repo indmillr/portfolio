@@ -124,7 +124,7 @@ export default function About() {
               </PText>
             </div>
             <button>
-              <a href={require("../path/to/file.pdf")} download="myFile">Download Resume</a>
+              <a href={require("../assets/files/Resume--IanMiller.pdf")} download="Resume--IanMiller">Download Resume</a>
             </button>
           </div>
           <div className='right'>
