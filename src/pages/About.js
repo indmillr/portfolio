@@ -95,8 +95,8 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
-  const saveFile = () => {
-    saveAs("../assets/files/Resume--IanMiller.pdf", "Resume--IanMiller.pdf");
+  const fileRequest = () => {
+    window.location = "../assets/files/Resume--IanMiller.pdf";
   };
 
   return (
@@ -126,9 +126,7 @@ export default function About() {
                 communicate with any link of the business chain.
               </PText>
             </div>
-            <a href={require("../assets/files/Resume--IanMiller.pdf")} download>
-              <button>Download Resume</button>
-            </a>
+            <button onClick={fileRequest}>Download Resume</button>
           </div>
           <div className='right'>
             <img src={AboutImg} alt='Ian Miller img' />
