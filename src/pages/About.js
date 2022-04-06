@@ -126,7 +126,7 @@ export default function About() {
                 communicate with any link of the business chain.
               </PText>
             </div>
-            <a href='../assets/files/Resume--IanMiller.pdf' download>
+            <a href={require("../assets/files/Resume--IanMiller.pdf")} download>
               <button onClick={saveFile} value='Download Resume'>
                 Download Resume
               </button>
