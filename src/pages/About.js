@@ -123,7 +123,7 @@ export default function About() {
               </PText>
             </div>
             <a href={PDF} without rel='noopener noreferrer' target='_blank'>
-              <button>Resume</button>
+              <button>View Resume</button>
             </a>
           </div>
           <div className='right'>
