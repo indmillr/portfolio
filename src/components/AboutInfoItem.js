@@ -11,6 +11,7 @@ const AboutItemStyles = styled.div`
   position: relative;
   .title {
     font-size: 2.4rem;
+    
   }
     h1:hover {
       color: var(--red);

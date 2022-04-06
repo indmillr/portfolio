@@ -15,6 +15,7 @@ const ContactBannerStyles = styled.div`
   .contactBanner__heading {
     font-size: 4rem;
     margin-bottom: 2rem;
+    color: #7aa7b2;
   }
   @media only screen and (max-width: 768px) {
     .contactBanner__heading {

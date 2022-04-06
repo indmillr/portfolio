@@ -6,6 +6,7 @@ const SectionTitleStyle = styled.div`
   p {
     font-family: "RobotoMono Regular";
     font-size: 2rem;
+    color: #7aa7b2;
   }
   h2 {
     font-family: "Montserrat Bold";

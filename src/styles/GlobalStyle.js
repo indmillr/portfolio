@@ -9,13 +9,14 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #215660;
+    --dark-bg: #2c4a58;
     --gray-1: #eeebd3;
-    --deep-dark: #17353a;
+    --deep-dark: #233a45;
     --gray-2: #437882;
     --white : #fffdf3;
     --black: #0d1321;
-    --red: #53ead9;
+    --red: #e48f2f;
+    --highlight: #ceaf01;
     --shadow: 0 15px 20px rgba(255, 255,255, 0.25);
     --transition: all 0.1s linear;
   }

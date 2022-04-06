@@ -21,7 +21,7 @@ const FormStyle = styled.div`
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--red);
+    color: var(--highlight);
     background-color: var(--deep-dark);
     outline: none;
     border: none;

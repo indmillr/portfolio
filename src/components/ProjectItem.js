@@ -26,6 +26,7 @@ const ProjectItemStyle = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
+    color: var(--highlight);
   }
   .projectItem__desc {
     font-size: 1.6rem;
@@ -34,10 +35,10 @@ const ProjectItemStyle = styled.div`
   }
   .projectItem__tools {
     margin-top: 1.5rem;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-family: "RobotoMono Regular";
     margin-top: 1rem;
-    color: var(--red);
+    color: #7aa7b2;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {

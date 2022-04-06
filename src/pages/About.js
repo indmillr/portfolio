@@ -27,11 +27,13 @@ const AboutPageStyles = styled.div`
       background-color: var(--deep-dark);
       padding: 0.5rem;
       border-radius: 8px;
+      color: var(--red);
     }
   }
   .about__heading {
     font-size: 3.6rem;
     margin-bottom: 3rem;
+    color: #7aa7b2;
   }
   .about__info {
     margin-bottom: 4rem;
@@ -51,7 +53,8 @@ const AboutPageStyles = styled.div`
     margin-bottom: 10rem;
   }
   .about__info__heading {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
+    color: var(--highlight);
     text-transform: uppercase;
   }
   .link:hover {
@@ -134,12 +137,10 @@ export default function About() {
           <div className='about__info__item'>
             <h1 className='about__info__heading'>Education</h1>
             <AboutInfoItem
-              link='https://www.missouristateuniversity.edu'
               title='Missouri State University'
               items={["Accounting", "Finance"]}
             />
             <AboutInfoItem
-              link='https://www.otc.edu'
               title='Ozarks Technical College'
               items={["Associate of Arts"]}
             />
@@ -166,7 +167,6 @@ export default function About() {
             <h1 className='about__info__heading'>Professional Experience</h1>
             <AboutInfoItem
               title='Southern Rock Restaurants'
-              link='https://freecodecamp.org/certification/indmillr/responsive-web-design'
               items={["General Manager", "2002-Present"]}
             />
           </div>
