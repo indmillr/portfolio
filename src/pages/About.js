@@ -126,7 +126,7 @@ export default function About() {
                 communicate with any link of the business chain.
               </PText>
             </div>
-            <button onClick={fileRequest}>Download Resume</button>
+            <button onClick={fileRequest}>Resume</button>
           </div>
           <div className='right'>
             <img src={AboutImg} alt='Ian Miller img' />
