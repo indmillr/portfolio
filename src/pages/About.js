@@ -127,9 +127,7 @@ export default function About() {
               </PText>
             </div>
             <a href={require("../assets/files/Resume--IanMiller.pdf")} download>
-              <button onClick={saveFile} value='Download Resume'>
-                Download Resume
-              </button>
+              <button>Download Resume</button>
             </a>
           </div>
           <div className='right'>
