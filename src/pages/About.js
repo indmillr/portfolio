@@ -95,9 +95,6 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
-  const saveFile = () => {
-    saveAs("../assets/files/Resume--IanMiller.pdf", "Resume--IanMiller.pdf");
-  };
 
   return (
     <AboutPageStyles>
@@ -126,8 +123,8 @@ export default function About() {
                 communicate with any link of the business chain.
               </PText>
             </div>
-            <button onClick={saveFile} value='Download Resume'>
-              Download Resume
+            <button>
+              <a href={require("../path/to/file.pdf")} download="myFile">Download Resume</a>
             </button>
           </div>
           <div className='right'>
