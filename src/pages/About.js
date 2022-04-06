@@ -4,7 +4,6 @@ import AboutImg from "../assets/images/about.png";
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
-import { saveAs } from "file-saver";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
