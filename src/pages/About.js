@@ -94,10 +94,6 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
-  const fileRequest = () => {
-    window.location = "../assets/files/Resume--IanMiller.pdf";
-  };
-
   return (
     <AboutPageStyles>
       <div className='container'>
@@ -125,7 +121,9 @@ export default function About() {
                 communicate with any link of the business chain.
               </PText>
             </div>
-            <button onClick={fileRequest}>Resume</button>
+            <a href='/Resume' target='_blank'>
+              <button>Resume</button>
+            </a>
           </div>
           <div className='right'>
             <img src={AboutImg} alt='Ian Miller img' />
