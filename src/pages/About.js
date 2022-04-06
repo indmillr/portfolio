@@ -4,6 +4,7 @@ import AboutImg from "../assets/images/about.png";
 import styled from "styled-components";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
+import PDF from "../assets/files/Resume--IanMiller.pdf";
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -121,7 +122,7 @@ export default function About() {
                 communicate with any link of the business chain.
               </PText>
             </div>
-            <a href='/Resume' target='_blank'>
+            <a href={PDF} without rel='noopener noreferrer' target='_blank'>
               <button>Resume</button>
             </a>
           </div>
