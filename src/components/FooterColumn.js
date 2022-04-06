@@ -49,6 +49,3 @@ export default function FooterColumn({
     </ColStyles>
   );
 }
-
-// Link from react-router-dom
-// a tag

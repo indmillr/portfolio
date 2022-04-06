@@ -47,7 +47,6 @@ const FooterStyles = styled.div`
       .container {
         div {
           margin-top: 0;
-          font-size: 1rem;
         }
       }
     }
