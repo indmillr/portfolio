@@ -37,7 +37,7 @@ const projects = [
     name: "Random Quote Machine",
     desc: "A toy app that generates a random quote from a hard-coded data bank. This was written as a requirement for my Dev Libs certification. I was comfortable using vanilla JS for this one but I have since learned that I could have saved lots of time and LOC by using React.",
     img: Quotes,
-    link: "/RQM",
+    link: "https://codepen.io/idmillr/pen/PoOjNVR",
     tools: "HTML | CSS | JS",
   },
   {
