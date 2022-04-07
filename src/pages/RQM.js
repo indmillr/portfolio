@@ -1,6 +1,6 @@
 import React from "react";
-import SectionTitle from "./SectionTitle";
-import RQMItem from "./RQMItem";
+import SectionTitle from "../components/SectionTitle";
+import RQMItem from "../components/RQMItem";
 import styled from "styled-components";
 
 const RQMStyle = styled.div`
