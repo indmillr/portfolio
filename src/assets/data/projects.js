@@ -6,8 +6,17 @@ import Quotes from "../images/quotes.jpg";
 import HIIT from "../images/hiit.jpg";
 import RPS from "../images/rps.jpg";
 import Simon from "../images/simon.jpg";
+import ToDo from "../images/todo.jpg";
 
 const projects = [
+  {
+    id: uuidv4(),
+    name: "CRUD To-Do List",
+    desc: "An editable to-do list built with Node and Postgres and styled with Bootstrap.",
+    img: ToDo,
+    link: "https://github.com/indmillr/PERN-todo",
+    tools: "HTML | CSS | JS | React | Node | Postgres | Bootstrap",
+  },
   {
     id: uuidv4(),
     name: "JS Calculator",
@@ -22,7 +31,7 @@ const projects = [
     desc: "This is a project I built as one of the requirements for my Frontend Dev Libraries Certification. Use the mouse or the keyboard to interact with this Drum Machine and watch the display change according to click or keydown.",
     img: DrumMachine,
     link: "https://codepen.io/idmillr/pen/LYOgOdb",
-    tools: "HTML | CSS | JS | REACT",
+    tools: "HTML | CSS | JS | React",
   },
   {
     id: uuidv4(),
@@ -30,7 +39,7 @@ const projects = [
     desc: "A live, split-window editor/previewer for markdown. This is another project built as a requirement for my Dev Libs cert that ties useState to real-time visual proof of its function.",
     img: MDPreviewer,
     link: "https://codepen.io/idmillr/pen/abVQmgq",
-    tools: "HTML | CSS | JS | REACT",
+    tools: "HTML | CSS | JS | React",
   },
   {
     id: uuidv4(),
@@ -46,7 +55,7 @@ const projects = [
     desc: "A two-timer interface that can be used for interval training workouts. Once the Exercise Timer ends, the Break Timer starts automatically. This was the trickiest of the requirements for certification. Lots of logic and events relying on other events and plenty of hands-on with useState. I had to Google lots for this one and looking back now I should have commented my code MUCH more thoroughly.",
     img: HIIT,
     link: "https://codepen.io/idmillr/pen/ZEaVEBq",
-    tools: "HTML | CSS | JS | REACT",
+    tools: "HTML | CSS | JS | React",
   },
   {
     id: uuidv4(),
