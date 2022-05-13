@@ -113,16 +113,16 @@ export default function About() {
                 soft-spot for symmetry and color.
                 <br />
                 <br />
-                I am seeking an opportunity to begin my dream career. I love to
+                I am seeking an opportunity to put my skills to work. I love to
                 design and create things and I always look forward to solving
                 challenging problems. My competitive edge keeps me eager to
                 continue learning.
                 <br />
                 <br />
-                My extensive experience in a professional setting has allowed me
-                to hone my soft skills in a culture of team development and
-                business growth and has created my ability to fluently
-                communicate with any link of the business chain.
+                My experience in a professional setting has allowed me to hone
+                my soft skills in a culture of team development and business
+                growth as well as my ability to communicate with any link of the
+                business chain.
               </PText>
             </div>
             <a href={PDF} without rel='noopener noreferrer' target='_blank'>

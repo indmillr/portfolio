@@ -167,7 +167,8 @@ export default function HeroSection() {
           </div>
           <div className='hero__info'>
             <PText>
-              I design and create functional websites and interactive web apps.{" "}
+              I design and create functional websites and interactive web apps
+              and I am looking for an opportunity to put my skills to work.{" "}
             </PText>
             <Button btnLink='/projects' btnText='Check it out' />
           </div>
