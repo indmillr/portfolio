@@ -140,16 +140,6 @@ export default function About() {
             </div>
             <div className="about__info__items">
                <div className="about__info__item">
-                  <h1 className="about__info__heading">Education</h1>
-                  <AboutInfoItem
-                     title="Ozarks Technical College"
-                     items={[
-                        "Associate of Arts",
-                        "Computer Information Systems",
-                     ]}
-                  />
-               </div>
-               <div className="about__info__item">
                   <h1 className="about__info__heading">Certifications</h1>
                   <AboutInfoItem
                      title="Relational Database"
@@ -175,6 +165,16 @@ export default function About() {
                      title="Responsive Web Design"
                      link="https://freecodecamp.org/certification/indmillr/responsive-web-design"
                      items={["HTML", "CSS", "Accessibility"]}
+                  />
+               </div>
+               <div className="about__info__item">
+                  <h1 className="about__info__heading">Education</h1>
+                  <AboutInfoItem
+                     title="Ozarks Technical College"
+                     items={[
+                        "Associate of Arts",
+                        "Computer Information Systems",
+                     ]}
                   />
                </div>
             </div>
