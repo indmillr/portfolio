@@ -177,15 +177,6 @@ export default function About() {
                      items={["HTML", "CSS", "Accessibility"]}
                   />
                </div>
-               <div className="about__info__item">
-                  <h1 className="about__info__heading">
-                     Professional Experience
-                  </h1>
-                  <AboutInfoItem
-                     title="Southern Rock Restaurants"
-                     items={["General Manager", "2002-Present"]}
-                  />
-               </div>
             </div>
          </div>
          <ContactBanner />
