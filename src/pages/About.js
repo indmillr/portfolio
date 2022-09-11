@@ -152,7 +152,7 @@ export default function About() {
                      ]}
                   />
                   <AboutInfoItem
-                     title="Frontend Dev Libraries"
+                     title="Frontend Development Libraries"
                      link="https://freecodecamp.org/certification/indmillr/front-end-development-libraries"
                      items={["Bootstrap", "jQuery", "SASS", "React"]}
                   />
