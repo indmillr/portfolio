@@ -157,7 +157,7 @@ export default function About() {
                      items={["Bootstrap", "jQuery", "SASS", "React"]}
                   />
                   <AboutInfoItem
-                     title="Javascript Alogorithms and Data Structures"
+                     title="Javascript Alogorithms & Data Structures"
                      link="https://freecodecamp.org/certification/indmillr/javascript-algorithms-and-data-structures"
                      items={["JS/ES6", "Regex", "Debugging", "OOP"]}
                   />
